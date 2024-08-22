@@ -1,12 +1,13 @@
-const http = require("http")
+const express = require("express")
 
-const server = http.createServer((req, res) => {
-    if (req.url === '/currenttime') {
-        res.statusCode = 200;
-        const time = new Date().toISOString().
-        res.write(`<h1>${time}</h1>`)
-        
-    }
+const app = express()
+
+app.get("/currentime", (req, res, next) => {
+    res.send(new Date().toISOString())
 })
 
-server.listen(3000)
+app.use((req, res, next) => {
+    res.status(200).send("<h1>Hello World</h1>")
+})
+
+app.listen(3000, () => console.log("Server start at port: 3000"))
