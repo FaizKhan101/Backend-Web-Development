@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EatWell</title>
+    <link rel="stylesheet" href="./styles/shared.css">
+    <link rel="stylesheet" href="./styles/recommend.css" />
+    <script type="module" src="./scripts/responsive.js"></script>
+
+  </head>
+  <body>
+    <header id="main-header">
+      <div id="logo"><a href="index.html">EatWell</a></div>
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <a href="restuarants.html">Browse Restuarants</a>
+          </li>
+          <li class="nav-item">
+            <a href="recommend.html">Share a Restuarants</a>
+          </li>
+          <li class="nav-item"><a href="about.html">About EatWell</a></li>
+        </ul>
+      </nav>
+      <button id="drawer-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <aside id="mobile-drawer">
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <a href="restuarants.html">Browse Restuarants</a>
+          </li>
+          <li class="nav-item"><a href="recommend.html">Share a Restuarants</a></li>
+          <li class="nav-item"><a href="about.html">About EatWell</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <h1>Share your favorite restaurant!</h1>
+      <form action="" method="POST">
+        <div class="form-control">
+          <label for="name">Restaurant name</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div class="form-control">
+          <label for="address">Address</label>
+          <input type="text" name="address" id="address">
+        </div> 
+        <div class="form-control">
+          <label for="type">Type of cuisine</label>
+          <input type="text" name="type" id="type" placeholder="e.g. Chinese">
+        </div>
+        <div class="form-control">
+          <label for="website">Restaurant Website</label>
+          <input type="text" name="website" id="website">
+        </div>
+        <div class="form-control">
+          <label for="name">Restaurant name</label>
+          <textarea name="name" id="name" rows="5"></textarea>
+        </div>
+        <div class="form-action">
+          <button type="submit">Share Restaurant</button>
+        </div>
+      </form>
+    </main>
+  </body>
+</html>

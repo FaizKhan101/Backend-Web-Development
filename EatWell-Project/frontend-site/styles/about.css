@@ -1,0 +1,18 @@
+  .action {
+    margin-top: 2rem;
+  }
+
+  .action a {
+    font: inherit;
+    padding: 0.5rem 1rem;
+    text-decoration: none;
+    border-radius: 4px;
+    border: none;
+    background-color: rgb(240, 171, 45);
+    color: white;
+    font-weight: bold;
+  }
+
+  .action a:hover {
+    background-color: rgb(214, 142, 7);
+  }

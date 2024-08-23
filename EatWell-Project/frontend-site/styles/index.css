@@ -1,0 +1,26 @@
+
+
+#actions {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 8rem auto 0 auto;
+    list-style: none;
+}
+
+#actions li a {
+    border-radius: 8px;
+    background-color: rgba(121, 117, 117, 0.795);
+    text-decoration: none;
+    padding: 4rem 3rem;
+    box-shadow: 4px 4px 10px #a19c94;;
+    color: white;
+    transition: 0.3s;
+}
+
+
+#actions li a:hover {
+    background-color: #636260;
+    color: white;
+}
+
+

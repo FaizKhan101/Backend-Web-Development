@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>EatWell</title>
+    <link rel="stylesheet" href="./styles/shared.css" />
+    <link rel="stylesheet" href="./styles/restuarants.css" />
+    <script type="module" src="./scripts/responsive.js"></script>
+  </head>
+  <body>
+    <header id="main-header">
+      <div id="logo"><a href="index.html">EatWell</a></div>
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <a href="restuarants.html">Browse Restuarants</a>
+          </li>
+          <li class="nav-item">
+            <a href="recommend.html">Share a Restuarants</a>
+          </li>
+          <li class="nav-item"><a href="about.html">About EatWell</a></li>
+        </ul>
+      </nav>
+      <button id="drawer-btn">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </header>
+    <aside id="mobile-drawer">
+      <nav>
+        <ul>
+          <li class="nav-item">
+            <a href="restuarants.html">Browse Restuarants</a>
+          </li>
+          <li class="nav-item">
+            <a href="recommend.html">Share a Restuarants</a>
+          </li>
+          <li class="nav-item"><a href="about.html">About EatWell</a></li>
+        </ul>
+      </nav>
+    </aside>
+    <main>
+      <h1>Recommended Restuarants!</h1>
+      <p class="top-para">
+        Find your next favorite restuarants with help of our other users.
+      </p>
+
+      <ul id="restaurants-list">
+        <li class="restaurant-item">
+          <article>
+            <h2>Restuarant Title</h2>
+            <div class="restaurant-meta">
+              <p>Mexican</p>
+              <p>Address of the restaurant, including city</p>
+            </div>
+            <p>
+              A short description, explaining why this restuarant is awesome.
+            </p>
+            <div class="restuarant-action">
+              <a href="">View Website</a>
+            </div>
+          </article>
+        </li>
+      </ul>
+    </main>
+  </body>
+</html>
