@@ -10,6 +10,8 @@ router.get("/restaurants", restaurantsController.getRestaurants);
 
 router.get("/recommend", restaurantsController.getRecommend);
 
+router.post("/recommend", restaurantsController.postRecommend)
+
 router.get("/about", restaurantsController.getAbout);
 
 module.exports = router;

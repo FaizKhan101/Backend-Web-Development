@@ -1,45 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>EatWell</title>
-    <link rel="stylesheet" href="/styles/shared.css">
+<%- include("./includes/head") %>
     <link rel="stylesheet" href="/styles/about.css" />
-    <script type="module" src="/scripts/responsive.js"></script>
 
   </head>
   <body>
-    <header id="main-header">
-      <div id="logo"><a href="/">EatWell</a></div>
-      <nav>
-        <ul>
-          <li class="nav-item">
-            <a href="/restaurants">Browse Restaurants</a>
-          </li>
-          <li class="nav-item">
-            <a href="/recommend">Share a Restaurants</a>
-          </li>
-          <li class="nav-item"><a href="/about">About EatWell</a></li>
-        </ul>
-      </nav>
-      <button id="drawer-btn">
-        <span></span>
-        <span></span>
-        <span></span>
-      </button>
-    </header>
-    <aside id="mobile-drawer">
-      <nav>
-        <ul>
-          <li class="nav-item">
-            <a href="/restaurants">Browse Restaurants</a>
-          </li>
-          <li class="nav-item"><a href="/recommend">Share a Restaurants</a></li>
-          <li class="nav-item"><a href="/about">About EatWell</a></li>
-        </ul>
-      </nav>
-    </aside>
+    <%- include("./includes/header") %>
     <main>
       <h1>Make th world a tastier place!</h1>
       <p>
@@ -50,5 +14,4 @@
         <a href="index.html">Go To Home</a>
       </div>
     </main>
-  </body>
-</html>
+<%- include("./includes/footer") %>
